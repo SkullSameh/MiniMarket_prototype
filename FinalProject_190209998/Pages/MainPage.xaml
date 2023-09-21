@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject_190209998.MainPage"
+             Title="Home" BackgroundColor="Red">
+
+    <StackLayout BackgroundColor="Red">
+        <Border HorizontalOptions="Center" Padding="5" BackgroundColor="Black" VerticalOptions="Center">
+            <StackLayout BackgroundColor="White" WidthRequest="350">
+
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Label Text="UserName:- " FontAttributes="Bold" TextColor="Black" FontSize="22"></Label>
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Entry x:Name="UserName" WidthRequest="300" HeightRequest="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" Keyboard="Text"></Entry>
+                    </Border>
+                    
+                </StackLayout>
+
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Label Text="Email:- " FontAttributes="Bold" TextColor="Black" FontSize="22"></Label>
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Entry x:Name="Email" WidthRequest="300" HeightRequest="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" Keyboard="Email"></Entry>
+                    </Border>
+
+                </StackLayout>
+
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Label Text="Phone:- " FontAttributes="Bold" TextColor="Black" FontSize="22"></Label>
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Entry x:Name="Phone" WidthRequest="300" HeightRequest="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" Keyboard="Telephone"></Entry>
+                    </Border>
+
+                </StackLayout>
+
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Label Text="Address:- " FontAttributes="Bold" TextColor="Black" FontSize="22"></Label>
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Entry x:Name="Address" WidthRequest="300" HeightRequest="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"></Entry>
+                    </Border>
+
+                </StackLayout>
+
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Label Text="       " FontAttributes="Bold" TextColor="Black" FontSize="Large"></Label>
+
+                </StackLayout>
+                
+                
+
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Button x:Name="Save" Text="Save" FontSize="22" FontAttributes="Bold" WidthRequest="150" TextColor="Black" HeightRequest="15" Clicked="Save_Clicked"></Button>
+                    </Border>
+
+                    <Border BackgroundColor="Black" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Button x:Name="Clear" Text="Clear" FontSize="22" FontAttributes="Bold" WidthRequest="150" TextColor="Black" HeightRequest="15" Clicked="Clear_Clicked"></Button>
+                    </Border>
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </Border>
+
+        
+    </StackLayout>
+
+</ContentPage>

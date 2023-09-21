@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject_190209998.AdminPage"
+             Title="AdminPage" BackgroundColor="Red">
+
+    <StackLayout BackgroundColor="Red">
+        <Border BackgroundColor="Black" StrokeThickness="4" HorizontalOptions="Center" Padding="6">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="350" BackgroundColor="White" HeightRequest="300">
+                <Label Text="This Page is just for Admin please Write Your Name and Password" TextColor="Black"></Label>
+                <Label Text="Name: " FontSize="22" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Entry x:Name="Name" WidthRequest="300" BackgroundColor="Gray" FontSize="22"></Entry>
+
+                <Label Text="Password: " FontSize="22" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Entry x:Name="Pass" WidthRequest="300" BackgroundColor="Gray" FontSize="22"></Entry>
+
+
+                <Label Text=" " FontSize="22" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+                <Border BackgroundColor="Black" HorizontalOptions="Center">
+                    <Button x:Name="Login" Text="Login" TextColor="Black" WidthRequest="300" FontSize="22" FontAttributes="Bold" Clicked="Login_Clicked"></Button>
+                </Border>
+            </StackLayout>
+        </Border>
+
+        <Border x:Name="Access" BackgroundColor="Black" StrokeThickness="4" HorizontalOptions="Center" Padding="6">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="350" BackgroundColor="White" HeightRequest="300">
+                <Label Text="This Page is just for Admin please Write Your Name and Password" TextColor="Black"></Label>
+                
+                <Label Text="Name: " FontSize="22" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Entry x:Name="Pro_Name" WidthRequest="300" BackgroundColor="Gray" FontSize="22"></Entry>
+
+                <Label Text="Price: " FontSize="22" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Entry x:Name="Pro_Price" WidthRequest="300" BackgroundColor="Gray" FontSize="22"></Entry>
+
+                <Border BackgroundColor="Black" HorizontalOptions="Center">
+                    <Button x:Name="ADD" Text="ADD" TextColor="Black" WidthRequest="300" FontSize="22" FontAttributes="Bold" Clicked="ADD_Clicked"></Button>
+                </Border>
+
+
+                <Border BackgroundColor="Black" HorizontalOptions="Center">
+                    <Button x:Name="Remove" Text="ADD" TextColor="Black" WidthRequest="300" FontSize="22" FontAttributes="Bold" Clicked="Remove_Clicked"></Button>
+                </Border>
+            </StackLayout>
+        </Border>
+    </StackLayout>
+</ContentPage>

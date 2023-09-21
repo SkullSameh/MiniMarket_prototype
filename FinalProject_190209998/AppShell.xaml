@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FinalProject_190209998.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FinalProject_190209998"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" ></ShellContent>
+        </Tab>
+
+        <Tab Title="Product">
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Route="Page2" ></ShellContent>
+        </Tab>
+
+        <Tab Title="Payment">
+            <ShellContent ContentTemplate="{DataTemplate local:Page3}" Route="Page3" ></ShellContent>
+        </Tab>
+
+        <Tab Title="Order">
+            <ShellContent ContentTemplate="{DataTemplate local:Page4}" Route="Page4" ></ShellContent>
+        </Tab>
+
+        <Tab Title="Admin">
+            <ShellContent ContentTemplate="{DataTemplate local:AdminPage}" Route="AdminPage" ></ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>

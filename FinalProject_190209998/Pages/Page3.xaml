@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject_190209998.Page3"
+             Title="Payment" BackgroundColor="Red">
+    <ScrollView>
+        <StackLayout BackgroundColor="Red">
+            <Border HorizontalOptions="Center" Padding="5" BackgroundColor="Black" VerticalOptions="Center">
+                <StackLayout BackgroundColor="White" WidthRequest="350">
+
+
+                    <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                        <Label Text="Cart:- " FontAttributes="Bold" TextColor="Black" FontSize="22"></Label>
+                        <Border BackgroundColor="White" Padding="3" HorizontalOptions="Center" VerticalOptions="Center">
+                            <ListView x:Name="Cart_List">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Orientation="Horizontal" BackgroundColor="Black" Spacing="14">
+                                                <Label Text="{Binding Ord_Pro}" FontSize="22" FontAttributes="Bold" TextColor="White"></Label>
+                                                <Label Text="{Binding Ord_Pro_Price}" FontSize="22" FontAttributes="Bold" TextColor="White"></Label>
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </Border>
+
+
+            <Border HorizontalOptions="Center" Padding="5" BackgroundColor="Black" VerticalOptions="Center" Margin="5" >
+                <StackLayout BackgroundColor="White" WidthRequest="350">
+
+                    <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                        <Border BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Entry x:Name="Cardholder" Placeholder="Cardholder Name..." PlaceholderColor="DarkGray" WidthRequest="300" HeightRequest="50" BackgroundColor="White" TextColor="Black"></Entry>
+                        </Border>
+
+                    </StackLayout>
+
+
+                    <StackLayout  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                        <Border BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Entry x:Name="Card_NO" Placeholder="Card No..." PlaceholderColor="DarkGray" WidthRequest="300" HeightRequest="50" BackgroundColor="White" TextColor="Black"></Entry>
+                        </Border>
+
+                    </StackLayout>
+
+
+
+
+                    <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                        <Border BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Entry x:Name="Date" Placeholder="00/00" PlaceholderColor="DarkGray" WidthRequest="100" HeightRequest="50" BackgroundColor="White" TextColor="Black"></Entry>
+                        </Border>
+
+                        <Border BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Entry x:Name="CVV" Placeholder="CVV" PlaceholderColor="DarkGray" WidthRequest="100" HeightRequest="50" BackgroundColor="White" TextColor="Black"></Entry>
+                        </Border>
+                    </StackLayout>
+
+                </StackLayout>
+            </Border>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="Total price: " FontSize="Large" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label x:Name="TotalPrice" Text="0000" FontSize="Large" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"></Label>
+            </StackLayout>
+
+            <Border BackgroundColor="Black" Padding="4" HorizontalOptions="Center" VerticalOptions="Center">
+                <Button x:Name="Pay" Text="Pay" FontAttributes="Bold" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" HeightRequest="50" Clicked="Pay_Clicked"></Button>
+            </Border>
+
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

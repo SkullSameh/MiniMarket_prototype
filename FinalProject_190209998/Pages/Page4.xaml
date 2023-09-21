@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject_190209998.Page4"
+             Title="Last Orders" BackgroundColor="Red">
+
+    <ScrollView>
+        <StackLayout>
+            <Border BackgroundColor="Black" Padding="5" HorizontalOptions="Center">
+                <StackLayout>
+                    <ListView x:Name="Pay_List">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Border BackgroundColor="Black" HorizontalOptions="Center">
+                                        <StackLayout Orientation="Vertical" Spacing="4" BackgroundColor="Green" WidthRequest="500">
+                                            <Label Text="{Binding Pay_ID}" FontSize="22" FontAttributes="Bold" TextColor="White"></Label>
+                                            <Label Text="{Binding Pay_amt}" FontSize="22" FontAttributes="Bold" TextColor="White"></Label>
+                                            <Label Text="{Binding Date}" FontSize="22" FontAttributes="Bold" TextColor="White"></Label>
+                                        </StackLayout>
+                                    </Border>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Border>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

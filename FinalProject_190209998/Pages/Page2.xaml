@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject_190209998.Page2"
+             Title="Product"
+             BackgroundColor="Red">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="Red">
+            <Border HorizontalOptions="Center" Padding="5" BackgroundColor="Black" VerticalOptions="Center">
+                <StackLayout BackgroundColor="White" WidthRequest="350" HeightRequest="500">
+
+                    <Label Text="Product " FontAttributes="Bold" TextColor="Black" FontSize="22" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    
+                    <ListView x:Name="Pro_List" ItemTapped="Pro_List_ItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Border BackgroundColor="White" Padding="2">
+                                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
+                                            <Label Text="{Binding Pro_ID}" FontAttributes="Bold" TextColor="Black" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                                            <Label Text="{Binding Pro_Name}" FontAttributes="Bold" TextColor="Black" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                                            <Image Source="{Binding Pro_IMG}" WidthRequest="250" HeightRequest="250"></Image>
+                                            <Label Text="{Binding Pro_Price}" FontAttributes="Bold" TextColor="Black" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                                            <Border BackgroundColor="Black">
+                                                <Button x:Name="ADD" Text="ADD" WidthRequest="180" HeightRequest="50" BackgroundColor="White" Clicked="ADD_Clicked"></Button>
+                                            </Border>
+
+                                        </StackLayout>
+                                    </Border>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+
+                </StackLayout>
+            </Border>
+
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
